@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %} Pagina de inicio {% endblock title %}
+
+{% block content %}
+
+    <div class="container">
+
+        <figure class="image-container">
+            <img id="chosen-image" src="">
+            <figcaption id="file-name">
+
+            </figcaption>
+        </figure>
+        
+        <form action="/upload" method="post" enctype="multipart/form-data" class="form-ico">
+            <input type="file" id="file" name="file" accept="image/*" multiple required>
+            <input type="submit" value="Enviar" class="btn-enviar">
+        </form>
+    </div>
+    
+{% endblock content %}
